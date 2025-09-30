@@ -1,0 +1,354 @@
+/* Reset default browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #40534C;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR (Flexbox)
+========================= */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #fdfdfa9c;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff9800;
+}
+
+/* =========================
+   HOME (Grid)
+========================= */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 80px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fdfdfa9c;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+/*Gambar dalam index*/
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.card .btn:hover {
+  background: #0056b3;
+}
+
+
+/* =========================
+   ABOUT (Flexbox)
+========================= */
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2fa85;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container utama */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 40px;
+  background: linear-gradient(135deg, #ffffff, #eaf0ff);
+  border-radius: 12px;
+  max-width: 1100px;
+  margin: 50px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Bagian teks */
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  font-family: "Brush Script MT", cursive;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.about-text h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-align: justify;
+  color: #444;
+}
+
+/* Tombol navigasi about me dan contact di container about */
+.about-text .btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 10px 15px;
+  background: #f5eb5c;
+  color: #000000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.about-text .btn:hover {
+  background: #fdfdfa9c;
+  transform: scale(1.05);
+}
+
+/* Bagian foto */
+.about-photo {
+  flex: 1;
+  text-align: center;
+}
+
+.about-photo img {
+  width: 400px;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid #f5eb5c;
+  box-shadow: none; /* Hilangkan shadow */
+}
+
+/* Ikon sosial */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #f2fa85;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  background: #fdfdfa9c;
+  color: #f2fa85;
+}
+
+/* Responsif */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .about-photo img {
+    width: 220px;
+  }
+}
+
+/* ==== Galeri Kegiatan ==== */
+.gallery-section {
+  margin: 50px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0c0c0c;
+  font-weight: bold;
+  position: relative;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  padding: 12px;
+  font-size: 15px;
+  color: #333;
+  background-color: #f9f9ff;
+  font-weight: 500;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+.contact-form {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #f5eb5c;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fefeff;
+  color: rgb(22, 21, 21);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contact-form button:hover {
+  background: #fdfdfa9c;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar a {
+    margin: 10px 0;
+  }
+}
